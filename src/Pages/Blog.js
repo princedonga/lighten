@@ -23,7 +23,7 @@ function Blog() {
       <section>
         <div className=' container '>
           <div className='row'>
-            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12 col-12 d-sm-block mx-sm-auto'>
               <div class="card" style={{width:"23rem"}}>
                 <img src="Assets/img/s1.jpg" class="card-img-top" alt="..."/>
                   <div class="card-body">
@@ -33,7 +33,7 @@ function Blog() {
                   </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12 col-12 d-sm-block mx-sm-auto'>
               <div class="card" style={{width:"23rem"}}>
                 <img src="Assets/img/s2.jpg" class="card-img-top" alt="..."/>
                   <div class="card-body">
@@ -43,7 +43,7 @@ function Blog() {
                   </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12 col-12 d-sm-block mx-sm-auto'>
               <div class="card" style={{width:"23rem"}}>
                 <img src="Assets/img/s3.jpg" class="card-img-top" alt="..."/>
                   <div class="card-body">
@@ -53,7 +53,7 @@ function Blog() {
                   </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12 col-12 d-sm-block mx-sm-auto'>
               <div class="card mt-5" style={{width:"23rem"}}>
                 <img src="Assets/img/s3.jpg" class="card-img-top" alt="..."/>
                   <div class="card-body">
@@ -63,7 +63,7 @@ function Blog() {
                   </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12 col-12 d-sm-block mx-sm-auto'>
               <div class="card mt-5" style={{width:"23rem"}}>
                 <img src="Assets/img/s1.jpg" class="card-img-top" alt="..."/>
                   <div class="card-body">
@@ -73,7 +73,7 @@ function Blog() {
                   </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12 col-12 d-sm-block mx-sm-auto'>
               <div class="card mt-5 mb-5" style={{width:"23rem"}}>
                 <img src="Assets/img/s2.jpg" class="card-img-top" alt="..."/>
                   <div class="card-body">

@@ -1,0 +1,86 @@
+[
+    {
+        "id": "01",
+        "title": "Pendrive",
+        "price": 25,
+        "image01": "'../Fack-data/Images/p1.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "02",
+        "title": "Audio jack",
+        "price": 23,
+        "image01": "'../Fack-data/Images/p2.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "03",
+        "title": "Bluthooth Speker",
+        "price": 22,
+        "image01": "'../Fack-data/Images/p3.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "04",
+        "title": "Plug Bord",
+        "price": 30,
+        "image01": "'../Fack-data/Images/p4.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "05",
+        "title": "Bluthooth Speker",
+        "price": 27,
+        "image01": "'../Fack-data/Images/p5.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "06",
+        "title": "PC Spker",
+        "price": 28,
+        "image01": "'../Fack-data/Images/p6.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "07",
+        "title": "Charging Cable",
+        "price": 29,
+        "image01": "'../Fack-data/Images/p7.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "08",
+        "title": "Pendrive",
+        "price": 22,
+        "image01": "'../Fack-data/Images/p1.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "09",
+        "title": "Audio jack",
+        "price": 21,
+        "image01": "'../Fack-data/Images/p2.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "19",
+        "title": "Bluthooth Speker",
+        "price": 25,
+        "image01": "'../Fack-data/Images/p3.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "32",
+        "title": "Plug Bord",
+        "price": 25,
+        "image01": "'../Fack-data/Images/p4.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    },
+    {
+        "id": "26",
+        "title": "Bluthooth Speker",
+        "price": 25,
+        "image01": "'../Fack-data/Images/p5.png",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+    }
+]

@@ -2,14 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { cartactions } from '../../Store/Slice/CartSlice'
+import axios from 'axios';
 
 function ProductCard(props) {
     const{id,title,image01,price} = props.items
     const dispatch = useDispatch()
-    const addtoCart = () =>{
-      dispatch(cartactions.addItem({
-        id,title,image01,price
-      }))
+    const addtoCart = async() =>{
+      const newItem = { id, title, image01, price };
+
+      try {
+          const response = await axios.post('http://localhost:5000/api/cart/add', newItem);
+          if (response.status === 201) {
+              dispatch(cartactions.addItem(response.data));
+          }
+      } catch (error) {
+          console.error('Error adding item to cart:', error.message);
+      }
     }
   return (
     <div>

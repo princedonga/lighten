@@ -1,13 +1,24 @@
 import React from 'react'
-import products from '../Fack-data/Product'
 import { useState } from 'react'
 import ProductCard from './Catoegory/ProductCard'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import axios from 'axios'
+import { useEffect } from 'react'
+
 
 function Home() {
-  const [allProducts] = useState(products)
+  const [allProducts, setAllProducts] = useState([]);
 
+  useEffect(() => {
+    axios.get('http://localhost:5000/api/products')
+      .then(response => {
+        setAllProducts(response.data);
+      })
+      .catch(error => {
+        console.error("There was an error fetching the products!", error);
+      });
+  }, []);
   return (
     <div>
 
@@ -185,6 +196,17 @@ function Home() {
               </div>
             })
           }
+        </div>
+      </section>
+      <section className='mt-5'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div>
+                  <img src='Assets/img/mapimg.jpg' alt='map-img' className='img-fluid'></img>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

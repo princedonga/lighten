@@ -1,12 +1,23 @@
 import React from 'react'
 import ComonSecation from '../Componets/ComonSecation'
 import { useState } from 'react'
-import products from '../Fack-data/Product'
+// import products from '../Fack-data/Product'
 import ProductCard from './Catoegory/ProductCard'
-
+import { useEffect } from 'react'
+import axios from 'axios'
 
 function Product() {
-  const [allProducts, setProducts] = useState(products)
+  const [allProducts, setAllProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/api/products')
+      .then(response => {
+        setAllProducts(response.data);
+      })
+      .catch(error => {
+        console.error("There was an error fetching the products!", error);
+      });
+  }, []);
   return (
     <div>
       <ComonSecation title="OUR PRODUCT"></ComonSecation>

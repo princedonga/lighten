@@ -3,29 +3,50 @@ import { useDispatch } from 'react-redux'
 import { cartactions } from '../Store/Slice/CartSlice'
 import { ListGroupItem } from 'reactstrap'
 import { useSelector } from 'react-redux'
-// import image01 from '../Fack-data/Images/p1.png'
+import axios from 'axios'
+
 
 function Cart(props) {
     const { id, title, image01, price, totalprice, quantity } = props.items;
 
     const dispatch = useDispatch()
-    const addItem = () => {
-        dispatch(cartactions.addItem({
-            id, title, image01, price, quantity, totalprice
-        }))
+    const addItem = async() => {
+        const newItem = { id, title, image01, price };
+
+        try {
+            const response = await axios.post('http://localhost:5000/api/cart/add', newItem);
+            if (response.status === 201) {
+                dispatch(cartactions.addItem(response.data));
+            }
+        } catch (error) {
+            console.error('Error adding item to cart:', error.message);
+        }
     }
-    const removeItem = () => {
-        dispatch(cartactions.removeItem({
-            id
-        }))
+    const removeItem = async() => {
+        const cartItem = { id, title, image01, price };
+
+        try {
+            const response = await axios.post('http://localhost:5000/api/cart/remove', cartItem);
+            if (response.status === 201) {
+                dispatch(cartactions.removeItem(response.data));
+            }
+        } catch (error) {
+            console.error('Error remove item to cart:', error.message);
+        }
     }
-    const deleteItem = () => {
-        dispatch(cartactions.deleteItem({
-            id
-        }))
+    const deleteItem =async () => {
+        const CartItem = { id, title, image01, price };
+
+        try {
+            const response = await axios.post('http://localhost:5000/api/cart/delete', CartItem);
+            if (response.status === 201) {
+                dispatch(cartactions.deleteItem(response.data));
+            }
+        } catch (error) {
+            console.error('Error delete item to cart:', error.message);
+        }
     }
     const cartItem = useSelector(state => state.cart.cartItem)
-    console.log(props.items);
     return (
         <div>
             {
