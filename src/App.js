@@ -5,6 +5,7 @@ import Layout from './Componets/Layout';
 import Preloader from './Componets/Preloader';
 import './App.css';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -19,7 +20,7 @@ function App() {
   return (
     <div>
       {loading ? <Preloader /> : <Layout />}
-      
+     
     </div>
   );
 }

@@ -30,7 +30,7 @@ function Product() {
             <div className='row g-4 mt-2'>
               {
                 allProducts.map((item) => {
-                  return <div className='col-lg-3 col-md-6 col-sm-12 col-12'>
+                  return <div className='col-lg-3 col-md-6 col-sm-12 col-6'>
                     <ProductCard items={item}></ProductCard>
                   </div>
                 })
