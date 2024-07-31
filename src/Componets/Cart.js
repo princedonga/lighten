@@ -37,11 +37,12 @@ function Cart(props) {
         try {
             const response = await axios.post('http://localhost:5000/api/cart/delete', cartItem);
             if (response.status === 200) {
-                dispatch(cartactions.deleteItem(id)); 
+                dispatch(cartactions.deleteItem(response.data)); 
             }
         } catch (error) {
             console.error('Error deleting item from cart:', error.message);
         }
+        // console.log(cartItem);
     };
 
     const cartItem = useSelector(state => state.cart.cartItem);
