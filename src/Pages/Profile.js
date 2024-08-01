@@ -48,8 +48,9 @@ const Profile = () => {
         navigate('/register');
       });
     } catch (err) {
-      console.error(err.response.data);
+      console.log(err.response.data);
     }
+  
   };
 
   return (
@@ -58,7 +59,7 @@ const Profile = () => {
       <p><strong>Name:</strong> {user.name}</p>
       <p><strong>Email:</strong> {user.email}</p>
       <button onClick={handleLogout} className='login-btn'>Logout</button>
-      <button onClick={handleDeleteAccount} className='login'>Delete Account</button>
+      <button onClick={handleDeleteAccount} className='login-btn mt-2'>Delete Account</button>
     </div>
   );
 };

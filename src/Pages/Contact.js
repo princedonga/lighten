@@ -79,7 +79,7 @@ function Contact() {
                   <input
                     type='email'
                     name='email'
-                    className='form-control'
+                    className='form-control mt-4 mt-lg-0'
                     placeholder='Enter Email'
                     value={formData.email}
                     onChange={handleChange}
