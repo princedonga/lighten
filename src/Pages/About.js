@@ -9,16 +9,16 @@ function About() {
       <section className='mt-5'>
         <div className='container '>
           <div className='row'>
-            <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
+            <div className='col-lg-6 col-md-12 col-sm-12 col-12'>
               <div>
-                <img src='Assets/img/pc_layout.png' className='w-100' alt=''></img>
+                <img src='Assets/img/pc_layout.png' className='img-fluid' alt=''></img>
               </div>
             </div>
-            <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
+            <div className='col-lg-6 col-md-12 col-sm-12 col-12'>
               <div className=''>
                 <h3 className='fw-bold'>Who is Lighten</h3>
-                <p className='fs-5'> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
-                <p className='fs-5'> Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className='' style={{fontSize:"1.3vw"}}> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
+                <p className='' style={{fontSize:"1.3vw"}}> Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ function About() {
         </div>
       </section>
 
-      <section className='mt-5'>
+      <section className='mt-5 mb-5'>
         <div className='container'>
           <div className='row m-3'>
             <div className='col-lg-4  col-md-6 col-sm-6 col-12'>

@@ -103,9 +103,9 @@ function Home() {
         </div>
       </section>
       <section className='mt-5'>
-        <div className='text-center'>
+        <div className='text-center why-choose'>
           <h2 className='fs-1 py-2'><span className='text-warning'>SERVICE</span> PROCESS</h2>
-          <p className='fs-3'>Easy and effective way to get your device repair</p>
+          <h3 className=''>Easy and effective way to get your device repair</h3>
         </div>
       </section>
 
@@ -182,16 +182,16 @@ function Home() {
         </div>
       </section>
       <section className='container mt-5'>
-        <div className=''>
+        <div className='why-choose'>
           <h2 className='fs-1 py-2'><span className='text-warning'>OUR </span> PRODUCTS</h2>
-          <p className='fs-3'>Easy and effective way to get your device repair</p>
+          <h3 className='text-center'>Easy and effective way to get your device repair</h3>
         </div>
       </section>
-      <section className='container mt-5 m1-set'>
+      <section className='container mt-5'>
         <div className='row g-4 mt-2 m1-set'>
           {
             allProducts.map((item) => {
-              return <div className='col-lg-3 col-md-6 col-sm-6 col-6' key={item.id}>
+              return <div className='col-lg-3 col-md-6 col-sm-6 col-12' key={item.id}>
                 <ProductCard items={item}></ProductCard>
               </div>
             })
