@@ -6,6 +6,7 @@ import axios from 'axios';
 
 function CheckOut() {
     const totalAmount = useSelector(state => state.cart.totalAmount);
+ 
 
     const [formData, setFormData] = useState({
         name: '',
@@ -126,8 +127,9 @@ function CheckOut() {
                         <div className='col-lg-6'>
                             <div className='ms-5'>
                                 <h5 className='mt-5 mb-3'>SubTotal:<span className='ms-2'>${totalAmount}</span></h5>
-                                <h5 className='mb-3'>Shipping Cost:$12</h5>
-                                <h5>Total Amount: ${totalAmount + 12}</h5>
+                                <h5 className='mb-3'>Shipping Cost:$3</h5>
+                                <h5 className='mb-3'> Discount: {totalAmount-25}</h5>
+                                <h5>Total Amount: ${totalAmount -13 }</h5>
                             </div>
                         </div>
                     </div>

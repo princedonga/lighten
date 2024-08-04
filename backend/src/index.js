@@ -21,6 +21,25 @@ const checkoutRoutes = require("./routes/checkout")
 const contectRoutes = require('./routes/contect')
 const authRoutes = require('./routes/auth')
 
+const coupons = {
+    'FIRST': 10,
+    'USE20SBI': 15,
+    'DISCOUNT30': 30,
+};
+
+// Endpoint to apply discount
+app.post('/api/cart/apply-discount', (req, res) => {
+    const { code } = req.body;
+    const discountAmount = coupons[code.toUpperCase()];
+    
+    if (discountAmount) {
+        return res.status(200).json({ discountAmount });
+    } else {
+        return res.status(400).json({ message: 'Invalid discount code' });
+    }
+});
+
+
 app.use('/api/products', productsRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/contact',contectRoutes)

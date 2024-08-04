@@ -13,10 +13,24 @@ function Header() {
       <section>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-6 col-md-6 col-sm-6 col-5'>
-              <img src='Assets/img/logo.jpg' alt='' className='img-fluid' />
+            <div className='col-lg-2 col-md-6 col-sm-6 col-5'>
+             <Link to="/"><img src='Assets/img/logo.jpg' alt='' className='img-fluid' /></Link>
             </div>
-            <div className='col-lg-6 col-md-6 col-sm-6 col-7'>
+            <div className='col-lg-8 d-lg-block d-none'>
+              <div>
+              <ul className='nav-set-main'>
+                          <li><Link to="/">HOME</Link></li>
+                          <li><Link to="/about">ABOUT</Link></li>
+                          <li><Link to="/product">PRODUCT</Link></li>
+                          <li><Link to="/blog">BLOG</Link></li>
+                          <li><Link to="/contact">CONTACT</Link></li>
+                          <li><Link to="/login">SIGN UP</Link></li>
+                          <li><Link to="/carts">CARTS</Link></li>
+                          <li><Link to="/register">REGISTER</Link></li>
+                        </ul>
+              </div>
+            </div>
+            <div className='col-lg-2 col-md-6 col-sm-6 col-7'>
               <div className='float-end position-relative'>
                 <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                   <i className="fa-solid fa-cart-shopping fs-4"></i>
@@ -42,7 +56,7 @@ function Header() {
                 </div>
                 <span className='q-set text-dark'>{quantity}</span>
                 <span className='fs-4 ms-3'>
-                  <i className="fa-solid fa-bars mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <i className="fa-solid fa-bars mt-4 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                       <div className="offcanvas-header">
                         <h5 className="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
