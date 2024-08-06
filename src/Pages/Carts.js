@@ -125,7 +125,7 @@ function Carts() {
                                     <tbody>
                                         {cartItem.map((item) => (
                                             <tr key={item.id}>
-                                                <td className='text-center'><img src={item.image01} alt="" className='w-25' /></td>
+                                                <td className='text-center'><img src={item.image01} alt="" className=' ' style={{width:"12vw"}} /></td>
                                                 <td className='text-center'>{item.title}</td>
                                                 <td className='text-center'>${item.price}</td>
                                                 <td className='text-center'>

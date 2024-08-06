@@ -45,6 +45,8 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/contact',contectRoutes)
 app.use('/api', checkoutRoutes);
 app.use('/api/auth', authRoutes);
+
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });

@@ -41,8 +41,7 @@ function Cart(props) {
             }
         } catch (error) {
             console.error('Error deleting item from cart:', error.message);
-        }
-        // console.log(cartItem);
+        } 
     };
 
     const cartItem = useSelector(state => state.cart.cartItem);

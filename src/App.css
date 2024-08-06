@@ -46,6 +46,14 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.icon-set{
+    background-color: #f9be20;
+    padding: 8px 0px;
+}
+.icon-set i{
+    padding: 10px 15px;
+    font-size: 20px;
+}
 .nav-set-main{
     list-style: none;
     margin: 16px 0px;
@@ -141,13 +149,16 @@
 .main-set h1 {
     font-size: 5vw;
 }
-
+.main-set p{
+    font-size: 1.1vw;
+}
 .m-set {
-    margin: 10px 70px;
+    /* margin: 10px 0px; */
+    padding: 10px 0px;
 }
 
 .main-set button {
-    width: 250px;
+    width: 17vw;
     background: #ffc221;
     padding: 9px 0px;
     color: #fff;
@@ -295,9 +306,67 @@
     color: #f9be20;
     transition: 0.5s;
 }
+.footer-bg{
+    background: #f9be20;
+    padding: 10px 0px;
+}
+
+/* `````zoomm``` */
+.zooom-conatainer{
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+.zoom-img{
+    transition: transform 0.5s ease;
+}
+.zooom-conatainer:hover .zoom-img{
+    transform: scale(1.5);
+}
+/* `````````paginate````` */
 
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li a {
+    display: block;
+    padding: 8px 16px;
+    /* border: 1px solid #ddd; */
+    background-color: #ddd;
+    color: #f9be20;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #000;
+  }
+  
+  .pagination li a:hover {
+    background-color: #f9be20;
+    color: white;
+  }
+  
+  .pagination li.active a {
+    background-color: #f9be20;
+    /* border-color: #007bff; */
+    color: white;
+  }
+  
+  .pagination li.disabled a {
+    color: #000;
 
+    cursor: not-allowed;
+  }
+  
 /* ``````````````````````````````````````````blog````````````````````````````````````` */
 
 .card {
@@ -413,3 +482,4 @@
     }
 
 }
+

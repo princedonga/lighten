@@ -33,8 +33,8 @@ function ProductDetails(props) {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-3 col-md-3 col-sm-12'>
-                            <div>
-                                <img src={image01} alt='' className='w-100'></img>
+                            <div className='zooom-conatainer'>
+                                <img src={image01} alt='' className='w-100 zoom-img'></img>
                             </div>
                         </div>
                         <div className='col-lg-9 col-md-10 col-sm-12'>

@@ -73,6 +73,7 @@ const cartSlice = createSlice({
             }
             state.totalAmount = state.cartItem.reduce((total, item) => total + Number(item.price) * Number(item.quantity), 10)
         }
+        
     }
 })
 export const cartactions = cartSlice.actions

@@ -56,6 +56,19 @@ function Footer() {
           </div>
         </div>
       </footer>
+      <section className='footer-bg  d-lg-block d-none'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-lg-12'>
+                <div className='text-center fs-5'>  
+                  <p className='mt-2'>
+                  Copyright 2019 All Right Reserved By Free html Templates Distributed By ThemeWagon
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

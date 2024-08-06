@@ -27,9 +27,11 @@ function Home() {
           <div className='row'>
             <div className='col-lg-12 col-md-12 col-sm-12 '>
               <div className='main-set container '>
-                <h1 className='m-set'>OUR <br></br>LATEST<br></br> <span className='text-warning'>PRODUCT</span></h1>
-                <p className='m-set'>It is a long established fact that a r<br></br>eader will be distracted by the readable content of a page</p>
-                <button className='m-set'><Link className='text-decoration-none text-white' to="/product">See More Product</Link></button>
+                <div className=''>
+                  <h1 className='m-set'>OUR <br></br>LATEST<br></br> <span className='text-warning'>PRODUCT</span></h1>
+                  <p className='m-set'>It is a long established fact that a r<br></br>eader will be distracted by the readable content of a page</p>
+                  <button className='m-set'><Link className='text-decoration-none text-white' to="/product">See More Product</Link></button>
+                </div>
               </div>
             </div>
           </div>
@@ -203,7 +205,7 @@ function Home() {
           <div className='row'>
             <div className='col-lg-12'>
               <div>
-                  <img src='Assets/img/mapimg.jpg' alt='map-img' className='img-fluid'></img>
+                <img src='Assets/img/mapimg.jpg' alt='map-img' className='img-fluid'></img>
               </div>
             </div>
           </div>
