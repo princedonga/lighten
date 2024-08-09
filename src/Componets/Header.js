@@ -29,7 +29,7 @@ function Header() {
           </div>
         </div>
       </section>
-      <div className='py-3'>
+      <div className='py-3 position-sticky top-0 bg-white z-3'>
         <section>
           <div className='container py-3'>
             <div className='row'>
