@@ -48,11 +48,11 @@ function ProductDetails(props) {
                     </div>
                     <div className='row'>
                         <div className='col-lg-12'>
-                            <div>
-                                <h4>Description</h4>
+                            <div className='m-4'>
+                                <h4 className='mt-4'>Description</h4>
                             </div>
-                            <div className='mb-5'>
-                                <p>{desc}</p>
+                            <div className='mb-5 m-4'>
+                                <p className='mt-4'>{desc}</p>
                             </div>
                         </div>
                     </div>
