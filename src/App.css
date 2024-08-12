@@ -46,25 +46,30 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-.icon-set{
+
+.icon-set {
     background-color: #f9be20;
     padding: 8px 0px;
 }
-.icon-set i{
+
+.icon-set i {
     padding: 10px 15px;
     font-size: 20px;
 }
-.nav-set-main{
+
+.nav-set-main {
     list-style: none;
     margin: 16px 0px;
     /* padding: 10px 10px; */
     text-align: center;
 }
-.nav-set-main li{
+
+.nav-set-main li {
     margin-bottom: 10px;
     display: inline-block;
 }
-.nav-set-main a{
+
+.nav-set-main a {
     text-decoration: none;
     font-size: 17px;
     color: #000;
@@ -72,7 +77,8 @@
     padding: 10px 10px;
     position: relative;
 }
-.nav-set-main a::before{
+
+.nav-set-main a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -83,10 +89,12 @@
     transform: scale(0);
     transition: 0.7s;
 }
+
 .nav-set-main a:hover::before {
     transform: scale(1);
     transition: 0.7s;
 }
+
 .nav-set {
     list-style: none;
     margin: 50px 10px;
@@ -137,30 +145,33 @@
 }
 
 .main-bg {
+    width: auto;
+    height: 80%;
     background-image: url('https://themewagon.github.io/lighten/images/banner2.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 70vh; /* Ensure it covers the full height of the viewport */
-    width: 100%;
 
 }
 
 .main-set h1 {
-    font-size: 5vw;
+    font-size: 6vw;
+
 }
-.main-set p{
-    font-size: 1.1vw;
+
+.main-set p {
+    font-size: 10px;
 }
+
 .m-set {
     /* margin: 10px 0px; */
     padding: 10px 0px;
 }
 
 .main-set button {
-    width: 17vw;
+
     background: #ffc221;
-    padding: 9px 0px;
+    padding: 9px 50px;
     color: #fff;
     font-size: 17px;
     border-radius: 30px 0px 30px 30px;
@@ -185,9 +196,11 @@
 .why-choose h2 span {
     color: #ffc221;
 }
-.why-choose h3{
+
+.why-choose h3 {
     font-size: 2vw;
 }
+
 .set-btn {
     margin: 0 auto;
     background: #fff;
@@ -306,23 +319,27 @@
     color: #f9be20;
     transition: 0.5s;
 }
-.footer-bg{
+
+.footer-bg {
     background: #f9be20;
     padding: 10px 0px;
 }
 
 /* `````zoomm``` */
-.zooom-conatainer{
+.zooom-conatainer {
     position: relative;
     overflow: hidden;
     cursor: zoom-in;
 }
-.zoom-img{
+
+.zoom-img {
     transition: transform 0.5s ease;
 }
-.zooom-conatainer:hover .zoom-img{
+
+.zooom-conatainer:hover .zoom-img {
     transform: scale(1.5);
 }
+
 /* `````````paginate````` */
 
 
@@ -332,13 +349,13 @@
     padding: 0;
     list-style: none;
     margin-top: 20px;
-  }
-  
-  .pagination li {
+}
+
+.pagination li {
     margin: 0 5px;
-  }
-  
-  .pagination li a {
+}
+
+.pagination li a {
     display: block;
     padding: 8px 16px;
     /* border: 1px solid #ddd; */
@@ -348,25 +365,25 @@
     text-decoration: none;
     border-radius: 4px;
     color: #000;
-  }
-  
-  .pagination li a:hover {
+}
+
+.pagination li a:hover {
     background-color: #f9be20;
     color: white;
-  }
-  
-  .pagination li.active a {
+}
+
+.pagination li.active a {
     background-color: #f9be20;
     /* border-color: #007bff; */
     color: white;
-  }
-  
-  .pagination li.disabled a {
+}
+
+.pagination li.disabled a {
     color: #000;
 
     cursor: not-allowed;
-  }
-  
+}
+
 /* ``````````````````````````````````````````blog````````````````````````````````````` */
 
 .card {
@@ -469,17 +486,76 @@
 
 @media(max-width:575px) {
 
-    .m1-set{
+    .m1-set {
         margin: 10px 60px !important;
     }
+
     .main-set button {
-        width: 180px;
+        /* width:180px; */
+        padding: 10px 10px;
     }
 
     .main-set p {
-        font-size: 13px;
-        width: 200px;
+        font-size: 10px;
+        width: auto;
     }
 
 }
 
+/* admin css/ */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #f06c64;
+    text-decoration: none;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-login a {
+    margin: 0 10px;
+}
+
+.social-login img {
+    width: 32px;
+    height: 32px;
+}
+
+.sidebar {
+    width: 250px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #f8f9fa;
+    color: #ff6b6b;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.pagination .page-item .page-link {
+    color: #ff6b6b;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}

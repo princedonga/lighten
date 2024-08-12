@@ -18,7 +18,7 @@ function Header() {
                 <span><i className="fa-brands fa-facebook"></i></span>
                 <Link to="https://x.com/DongaPrinc63321" target='_blank ' className='text-dark'><span><i class="fa-brands fa-twitter"></i></span></Link>
                 <Link to="https://www.instagram.com/prince__donga__/" target="_blank" className='text-dark'><span><i class="fa-brands fa-instagram"></i></span></Link>
-                <Link to="www.linkedin.com/in/prince-donga" target='_blank' className='text-dark'><span><i class="fa-brands fa-linkedin"></i></span></Link>
+                <Link to="https://www.linkedin.com/in/prince-donga-4760422a7/" target='_blank' className='text-dark'><span><i class="fa-brands fa-linkedin"></i></span></Link>
               </div>
             </div>
             <div className='col-lg-6'>
@@ -70,7 +70,7 @@ function Header() {
                       </div>
                       <div className='bg-warning py-3 position-absolute bottom-0 px-3' style={{ width: "93%" }}>
                         <h4 className='d-inline'>SubTotal:<span className='ms-2'>${total}</span></h4>
-                        <button className='btn btn-dark float-end'><Link to="/checkout" className='text-decoration-none text-white'>Check Out</Link></button>
+                        <button className='btn btn-dark float-end'><Link to="/carts" className='text-decoration-none text-white'>Check Out</Link></button>
                       </div>
                     </div>
                   </div>

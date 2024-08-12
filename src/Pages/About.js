@@ -102,7 +102,7 @@ function About() {
         <div className='container'>
           <div className='row m-3'>
             <div className='col-lg-4  col-md-6 col-sm-6 col-12'>
-              <div className='card-set'>
+              <div className='card-set mb-4'>
                 <img src='Assets/img/service1.png' alt=''></img>
                 <div>
                   <h3>
@@ -113,7 +113,7 @@ function About() {
               </div>
             </div>
             <div className='col-lg-4  col-md-6 col-sm-6 col-12'>
-              <div className='card-set'>
+              <div className='card-set mb-4'>
                 <img src='Assets/img/service2.png' alt=''></img>
                 <div>
                   <h3>

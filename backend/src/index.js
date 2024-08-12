@@ -20,6 +20,7 @@ const cartRoutes = require('./routes/cart');
 const checkoutRoutes = require("./routes/checkout")
 const contectRoutes = require('./routes/contect')
 const authRoutes = require('./routes/auth')
+const adminRoutes = require('./routes/admin')
 
 const coupons = {
     'FIRST': 10,
@@ -45,6 +46,7 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/contact',contectRoutes)
 app.use('/api', checkoutRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/admin',adminRoutes)
 
 
 app.listen(port, () => {

@@ -50,16 +50,16 @@ const Login = () => {
                   <input type="password" className="login__input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
                 </div>
                 <button className="button login__submit " type='submit'>
-                  <span className="button__text">Log In Now</span>
+                  <span className="button__text text-dark">Log In Now</span>
                   <i className="button__icon fas fa-chevron-right"></i>
                 </button>
               </form>
               <div className="social-login">
-                <h3>log in via</h3>
+                <h3 className='text-dark'>log in via</h3>
                 <div className="social-icons">
-                  <Link href="#" className="social-login__icon fab fa-instagram"></Link>
-                  <Link href="#" className="social-login__icon fab fa-facebook"></Link>
-                  <Link href="#" className="social-login__icon fab fa-twitter"></Link>
+                  <Link href="#" className="social-login__icon fab fa-instagram text-dark"></Link>
+                  <Link href="#" className="social-login__icon fab fa-facebook text-dark"></Link>
+                  <Link href="#" className="social-login__icon fab fa-twitter text-dark"></Link>
                 </div>
               </div>
             </div>

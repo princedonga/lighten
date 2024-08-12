@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import ProductCard from './Catoegory/ProductCard'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import '../App.css'
 import axios from 'axios'
 import { useEffect } from 'react'
@@ -28,15 +28,16 @@ function Home() {
             <div className='col-lg-12 col-md-12 col-sm-12 '>
               <div className='main-set container '>
                 <div className='ms-5'>
-                  <h1 className='m-set'>OUR <br></br>LATEST<br></br> <span className='text-warning'>PRODUCT</span></h1>
-                  <p className='m-set'>It is a long established fact that a r<br></br>eader will be distracted by the readable content of a page</p>
-                  <button className='m-set'><Link className='text-decoration-none text-white' to="/product">See More Product</Link></button>
+                  <h1 className='m-set mt-5 ms-5'>OUR <br></br>LATEST<br></br> <span className='text-warning'>PRODUCT</span></h1>
+                  {/* <p className='m-set'>It is a long established fact that a r<br></br>eader will be distracted by the readable content of a page</p>
+                  <button className='m-set'><Link className='text-decoration-none text-white' to="/product">See More Product</Link></button> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section>
         <div className='container py-4'>
           <div className='row '>
@@ -49,6 +50,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className='bg-warning mt-5'>
         <div className='container bg-white c-set'>
           <div className='row m-2 py-5'>
@@ -104,6 +106,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className='mt-5'>
         <div className='text-center why-choose'>
           <h2 className='fs-1 py-2'><span className='text-warning'>SERVICE</span> PROCESS</h2>
@@ -115,7 +118,7 @@ function Home() {
         <div className='container'>
           <div className='row m-3'>
             <div className='col-lg-4  col-md-6 col-sm-6 col-12'>
-              <div className='card-set'>
+              <div className='card-set mb-4'>
                 <img src='Assets/img/service1.png' alt=''></img>
                 <div>
                   <h3>
@@ -126,7 +129,7 @@ function Home() {
               </div>
             </div>
             <div className='col-lg-4  col-md-6 col-sm-6 col-12'>
-              <div className='card-set'>
+              <div className='card-set mb-4'>
                 <img src='Assets/img/service2.png' alt=''></img>
                 <div>
                   <h3>
@@ -183,12 +186,14 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className='container mt-5'>
         <div className='why-choose'>
           <h2 className='fs-1 py-2'><span className='text-warning'>OUR </span> PRODUCTS</h2>
           <h3 className='text-center'>Easy and effective way to get your device repair</h3>
         </div>
       </section>
+
       <section className='container mt-5'>
         <div className='row g-4 mt-2 m1-set'>
           {
@@ -200,6 +205,7 @@ function Home() {
           }
         </div>
       </section>
+
       <section className='mt-5'>
         <div className='container-fluid'>
           <div className='row'>

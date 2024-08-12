@@ -14,7 +14,10 @@ const Profile = () => {
         const res = await axios.get('http://localhost:5000/api/auth/user', {
           headers: { 'x-auth-token': token }
         });
+        // console.log(res.data); 
         setUser(res.data);
+        console.log(setUser);
+        
       } catch (err) {
         console.error(err.response.data);
       }
@@ -33,25 +36,46 @@ const Profile = () => {
     });
   };
 
-  const handleDeleteAccount = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/auth/user/${user.id}`, {
-        headers: { 'x-auth-token': token }
-      });
-      Swal.fire({
-        title: "Account Deleted",
-        text: "Your account has been deleted successfully",
-        icon: "success"
-      }).then(() => {
-        localStorage.removeItem('token');
-        navigate('/register');
-      });
-    } catch (err) {
-      console.log(err.response.data);
-    }
+  // const handleDeleteAccount = async () => {
+  //   try {
+  //     const token = localStorage.getItem('token');
+  //     console.log(`Deleting user with ID: ${user.id}`); // Check if user ID is correct
+  //     await axios.delete(`http://localhost:5000/api/auth/user/${user.id}`, {
+  //       headers: { 'x-auth-token': token }
+  //     });
+  //     Swal.fire({
+  //       title: "Account Deleted",
+  //       text: "Your account has been deleted successfully",
+  //       icon: "success"
+  //     }).then(() => {
+  //       localStorage.removeItem('token');
+  //       navigate('/register');
+  //     });
+  //   } catch (err) {
+  //     console.log(err.response.data);
+  //   }
   
-  };
+  // };
+  const handleDeleteAccount = async (id) => {
+  try {
+    const token = localStorage.getItem('token');
+    // console.log(`Deleting user with ID: ${user.id}`); // Ensure this is a valid ObjectId
+    await axios.delete(`http://localhost:5000/api/auth/user/${id}`, {
+      headers: { 'x-auth-token': token }
+    });
+    Swal.fire({
+      title: "Account Deleted",
+      text: "Your account has been deleted successfully",
+      icon: "success"
+    }).then(() => {
+      localStorage.removeItem('token');
+      navigate('/register');
+    });
+  } catch (err) {
+    console.log(err.response.data);
+  }
+};
+
 
   return (
     <div className="profile-container">
@@ -59,7 +83,7 @@ const Profile = () => {
       <p><strong>Name:</strong> {user.name}</p>
       <p><strong>Email:</strong> {user.email}</p>
       <button onClick={handleLogout} className='login-btn'>Logout</button>
-      <button onClick={handleDeleteAccount} className='login-btn mt-2'>Delete Account</button>
+      <button onClick={ () => handleDeleteAccount(user.id)} className='login-btn mt-2'>Delete Account</button>
     </div>
   );
 };
