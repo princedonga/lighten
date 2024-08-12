@@ -4,9 +4,9 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const router = express.Router();
 
-router.get('/user', async (req, res) => {
+router.get('/user/:id', async (req, res) => {
   try {
-      const users = await User.find().select('-password'); 
+      const users = await User.find().select('-password') 
       res.json(users);
   } catch (err) {
       res.status(500).json({ error: err.message });
