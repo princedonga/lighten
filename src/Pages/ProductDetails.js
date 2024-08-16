@@ -16,7 +16,7 @@ function ProductDetails(props) {
     
 
     useEffect(() => {
-        axios.get('http://lighten-three.vercel.app/api/products')
+        axios.get('http://localhost:5000/api/products')
             .then(response => {
                 setAllProducts(response.data);
             })
@@ -31,7 +31,7 @@ function ProductDetails(props) {
         const newItem = { id, title, image01, price };
 
         try {
-            const response = await axios.post('http://lighten-three.vercel.app/api/cart/add', newItem);
+            const response = await axios.post('http://localhost:5000/api/cart/add', newItem);
             if (response.status === 201) {
                 dispatch(cartactions.addItem(response.data));
             }

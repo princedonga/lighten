@@ -11,7 +11,7 @@ function Home() {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://lighten-three.vercel.app/api/products')
+    axios.get('http://localhost:5000/api/products')
       .then(response => {
         setAllProducts(response.data);
       })
