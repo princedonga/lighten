@@ -327,18 +327,19 @@
 
 /* `````zoomm``` */
 .zooom-conatainer {
-    position: relative;
-    overflow: hidden;
-    cursor: zoom-in;
+    position: sticky;
+    /* overflow: hidden; */
+    /* cursor: zoom-in; */
+    top: 10%;
 }
 
-.zoom-img {
+/* .zoom-img {
     transition: transform 0.5s ease;
 }
 
 .zooom-conatainer:hover .zoom-img {
     transform: scale(1.5);
-}
+}  */
 
 /* `````````paginate````` */
 

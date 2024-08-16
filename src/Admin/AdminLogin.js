@@ -42,7 +42,7 @@ function AdminLogin() {
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder='Password'
                         required
-                         className='form-control w-25 d-block mx-auto'
+                        className='form-control w-25 d-block mx-auto'
                     />
                 </div>
                 {error && <p>{error}</p>}

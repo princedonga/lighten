@@ -15,7 +15,7 @@ function AdminRegister() {
         e.preventDefault();
         try {
             await axios.post('http://localhost:5000/api/admin/register', { name, email, password, mobile, gender });
-            navigate('/a-login'); 
+            navigate('/a-login');
         } catch (error) {
             setError('Error registering user');
         }
@@ -26,7 +26,7 @@ function AdminRegister() {
             <h2 className='text-center mb-4'>Register</h2>
             <form onSubmit={handleRegister}>
                 <div>
-                   
+
                     <input
                         type="text"
                         value={name}
@@ -37,34 +37,34 @@ function AdminRegister() {
                     />
                 </div>
                 <div>
-                    
+
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder='Email'
                         required
-                         className='form-control w-25 d-block mx-auto mb-4'
+                        className='form-control w-25 d-block mx-auto mb-4'
                     />
                 </div>
                 <div>
-                    
+
                     <input
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder='Password'
                         required
-                         className='form-control w-25 d-block mx-auto mb-4'
+                        className='form-control w-25 d-block mx-auto mb-4'
                     />
                 </div>
                 <div>
-                   
+
                     <input
                         type="text"
                         value={mobile}
                         onChange={(e) => setMobile(e.target.value)}
-                        placeholder='Mobile' 
+                        placeholder='Mobile'
                         className='form-control w-25 d-block mx-auto mb-4'
                     />
                 </div>

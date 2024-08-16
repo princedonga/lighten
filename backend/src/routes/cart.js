@@ -50,7 +50,7 @@ router.post('/delete', async (req, res) => {
     try {
         
         const { id } = req.body;
-        await CartItem.deleteOne({ id });
+        await CartItem.findByIdAndDelete({ id });
         res.status(200).json({ message: 'Item deleted' });
     } catch (error) {
         res.status(500).json({ message: error.message });

@@ -37,18 +37,18 @@ function Cart(props) {
         try {
             const response = await axios.post('http://localhost:5000/api/cart/delete', cartItem);
             if (response.status === 200) {
-                dispatch(cartactions.deleteItem(response.data)); 
+                dispatch(cartactions.deleteItem(response.data));
             }
         } catch (error) {
             console.error('Error deleting item from cart:', error.message);
-        } 
+        }
     };
 
     const cartItem = useSelector(state => state.cart.cartItem);
-    
+
     return (
         <div>
-            { cartItem.length === 0 ? (
+            {cartItem.length === 0 ? (
                 <img src='https://cdni.iconscout.com/illustration/free/thumb/free-empty-cart-4085814-3385483.png' className='w-25 d-block mx-auto' alt='Empty Cart' />
             ) : (
                 <ListGroupItem className='border-0 cart__item'>

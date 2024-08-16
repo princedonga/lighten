@@ -17,7 +17,7 @@ function Admin() {
 
     const fetchUsers = async (token) => {
         try {
-            const response = await axios.get('http://localhost:5000/api/auth/user', {
+            const response = await axios.get(`http://localhost:5000/api/auth/user/${token}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -84,8 +84,7 @@ function Admin() {
                                 <th>Photo</th>
                                 <th>Full Name</th>
                                 <th>Email</th>
-                                <th>Mobile</th>
-                                <th>Gender</th>
+                                
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -95,8 +94,7 @@ function Admin() {
                                     <td><img src="Assets/img/Ellipse.png" alt="User" className="rounded-circle" width="40" /></td>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
-                                    <td>{user.mobile}</td>
-                                    <td>{user.gender}</td>
+                                   
                                     <td>
                                         <i className="bi bi-upload me-2"></i>
                                         <i className="fa-solid fa-trash" onClick={() => deleteUser(user._id)}></i>
