@@ -7,7 +7,7 @@ function Header() {
   const quantity = useSelector(state => state.cart.totalQuantity);
   const total = useSelector(state => state.cart.totalAmount);
   const pro = useSelector(state => state.cart.cartItem);
-
+  const user = useSelector(state => state.auth.user); // Assuming user info is stored in state
   return (
     <>
       <section className='icon-set d-lg-block d-none'>
@@ -35,7 +35,7 @@ function Header() {
             <div className='row'>
               <div className='col-lg-2 col-md-6 col-sm-6 col-5'>
                 <Link to="/"><img src='Assets/img/logo.jpg' alt='' className='w-100' /></Link>
-              </div>  
+              </div>
               <div className='col-lg-8 d-lg-block d-none'>
                 <div>
                   <ul className='nav-set-main'>

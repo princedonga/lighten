@@ -17,7 +17,7 @@ function Admin() {
 
     const fetchUsers = async (token) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/auth/user/${token}`, {
+            const response = await axios.get('http://localhost:5000/api/auth/users', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -91,7 +91,7 @@ function Admin() {
                         <tbody>
                             {users.map(user => (
                                 <tr key={user._id}>
-                                    <td><img src="Assets/img/Ellipse.png" alt="User" className="rounded-circle" width="40" /></td>
+                                    <td><img src={`http://localhost:5000${user.photo}`} alt="User" className="rounded-circle" width="40" /></td>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
                                    

@@ -47,6 +47,7 @@ app.use('/api/contact',contectRoutes)
 app.use('/api', checkoutRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/admin',adminRoutes)
+app.use('/uploads', express.static('uploads'));
 
 
 app.listen(port, () => {

@@ -151,12 +151,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    /* background-attachment: fixed; */
 }
 
 .main-set h1 {
-    font-size: 6vw;
-
+    font-size: 5.8vw;
+    position: absolute;
+    transform: translate(55%, -129%);
 }
 
 .main-set p {
@@ -502,6 +503,11 @@
     }
 
 }
+@media(min-width:326px){
+    .m-set{
+        margin: 10px 0px !important;
+    }
+}
 
 /* admin css/ */
 .login-link {
@@ -560,3 +566,4 @@
     background-color: #ff6b6b;
     border-color: #ff6b6b;
 }
+
