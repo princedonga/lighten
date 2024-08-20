@@ -84,7 +84,7 @@ function Admin() {
                                 <th>Photo</th>
                                 <th>Full Name</th>
                                 <th>Email</th>
-                                
+
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -94,7 +94,7 @@ function Admin() {
                                     <td><img src={`http://localhost:5000${user.photo}`} alt="User" className="rounded-circle" width="40" /></td>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
-                                   
+
                                     <td>
                                         <i className="bi bi-upload me-2"></i>
                                         <i className="fa-solid fa-trash" onClick={() => deleteUser(user._id)}></i>
