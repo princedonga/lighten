@@ -45,7 +45,7 @@ app.use('/api/products', productsRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/contact',contectRoutes)
 app.use('/api', checkoutRoutes);
-app.use('/api/aut h', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api/admin',adminRoutes)
 app.use('/uploads', express.static('uploads'));
 

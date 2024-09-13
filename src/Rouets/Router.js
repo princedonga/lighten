@@ -13,7 +13,7 @@ import Register from '../Pages/Register'
 import Profile from '../Pages/Profile'
 import Admin from '../Admin/Admin'
 import Products from '../Componets/Products'
-import AdminLogin  from '../Admin/AdminLogin'
+import AdminLogin from '../Admin/AdminLogin'
 import AdminRegister from '../Admin/AdminRegister'
 import Administration from '../Admin/Administration'
 

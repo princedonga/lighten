@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 function Products() {
     const [products, setProducts] = useState([]);
-    // const [showModal, setShowModal] = useState(false);
     const [newProduct, setNewProduct] = useState({
         title: '',
         price: '',
@@ -35,7 +34,7 @@ function Products() {
     const handleImageChange = (e) => {
         setNewProduct({
             ...newProduct,
-            image: e.target.files[0]
+            image01: e.target.files[0]
         });
     };
 
@@ -49,13 +48,21 @@ function Products() {
         try {
             await axios.post('http://localhost:5000/api/products', formData, {
                 headers: {
-                    'Content-Type': 'multipart/form-data'
+                    'Content-Type': 'multipart/form-data',
+                    
                 }
             });
-            // setShowModal(false);
-            fetchProducts();
+            fetchProducts(); // Refresh the products list after upload
         } catch (error) {
             console.error('Error uploading product:', error);
+        }
+    };
+    const handleDelete = async (productId) => {
+        try {
+            await axios.delete(`http://localhost:5000/api/products/${productId}`);
+            setProducts(products.filter(product => product._id !== productId)); // Update the state
+        } catch (error) {
+            console.error('Error deleting product:', error);
         }
     };
 
@@ -91,27 +98,28 @@ function Products() {
                         <h1>Products</h1>
                         <button className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product</button>
 
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add New Product</h1>
+                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div className="modal-body">
                                         <input type="text" name="title" placeholder="Title" className="form-control mb-2" onChange={handleInputChange} />
                                         <input type="text" name="price" placeholder="Price" className="form-control mb-2" onChange={handleInputChange} />
-                                        <textarea name="description" placeholder="Description" className="form-control mb-2" onChange={handleInputChange}></textarea>
-                                        <input type="file" name="image" className="form-control mb-2" onChange={handleImageChange} />
+                                        <textarea name="desc" placeholder="Description" className="form-control mb-2" onChange={handleInputChange}></textarea>
+                                        <input type="file" name="image01" className="form-control mb-2" onChange={handleImageChange} />
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" onClick={handleUpload}>Upload</button>
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" className="btn btn-primary" onClick={handleUpload}>Upload</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <table className="table table-hover">
                         <thead>
                             <tr>
@@ -119,15 +127,19 @@ function Products() {
                                 <th>Title</th>
                                 <th>Price</th>
                                 <th>Description</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             {products.map(product => (
                                 <tr key={product._id}>
-                                    <td><img src={product.imageUrl} alt={product.title} width="40" /></td>
+                                    <td><img src={`${product.image01}`} alt={product.title} width="80" /></td>
                                     <td>{product.title}</td>
                                     <td>{product.price}</td>
                                     <td>{product.description}</td>
+                                    <td>
+                                        <i className="fa-solid fa-trash" onClick={handleDelete} ></i>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
